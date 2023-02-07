@@ -1,6 +1,9 @@
-name Repository Info
-method GET
-url {{baseUrl}}/repos/usebruno/bruno
-type http-request
-body-mode none
-seq 2
+meta {
+  name: Repository Info
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/repos/usebruno/bruno
+}

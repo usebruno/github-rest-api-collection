@@ -1,6 +1,9 @@
-name Repository Tags
-method GET
-url {{baseUrl}}/repos/usebruno/bruno/tags
-type http-request
-body-mode none
-seq 3
+meta {
+  name: Repository Tags
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/repos/usebruno/bruno/tags
+}

@@ -1,6 +1,9 @@
-name User Info
-method GET
-url {{baseUrl}}/users/usebruno
-type http-request
-body-mode none
-seq 1
+meta {
+  name: User Info
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/users/usebruno
+}

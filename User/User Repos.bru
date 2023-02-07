@@ -1,6 +1,9 @@
-name User Repos
-method GET
-url {{baseUrl}}/users/usebruno/repos
-type http-request
-body-mode none
-seq 2
+meta {
+  name: User Repos
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/users/usebruno/repos
+}
