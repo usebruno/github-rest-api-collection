@@ -1,0 +1,26 @@
+meta {
+  name: Get Users
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://reqres.in/api/users
+  body: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+assert {
+  res.status: 200
+}
+
+tests {
+  test("status code is 200", function() {
+    expect(res.status).equal(200);
+  });
+}
+
+
