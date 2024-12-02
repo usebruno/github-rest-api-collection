@@ -1,0 +1,15 @@
+meta {
+  name: Search Issues
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/search/issues?q=is:issue%20repo:usebruno/bruno
+  body: none
+  auth: none
+}
+
+params:query {
+  q: is:issue repo:usebruno/bruno
+}
