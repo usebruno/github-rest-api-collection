@@ -1,0 +1,15 @@
+meta {
+  name: Search Issues In React
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/search/issues?q=is:issue%20repo:meta/react
+  body: none
+  auth: none
+}
+
+params:query {
+  q: is:issue repo:meta/react
+}
