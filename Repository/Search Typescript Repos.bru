@@ -1,0 +1,17 @@
+meta {
+  name: Search Typescript Repos
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/search/repositories?q=typescript&order=desc&per_page=10
+  body: none
+  auth: none
+}
+
+params:query {
+  q: typescript
+  order: desc
+  per_page: 10
+}
